@@ -1,0 +1,20 @@
+{
+  "name": "PDQwebsite-master",
+  "version": "1.0.0",
+  "description": "PDQ Flyers web site",
+  "main": "sorking/src/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack --watch",
+    "watch:server": "nodemon \"./dist/index.js\" --watch \"./dist\""
+}
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "user": "0.0.0",
+    "watch": "^1.0.2"
+  }
+}

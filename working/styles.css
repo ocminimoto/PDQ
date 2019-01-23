@@ -1,0 +1,203 @@
+/* bootstrap dropdown hover menu*/
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #FFCC11;/*#333;*/
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #FFCC11;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+#navbar a.hover {
+  background-color: #FFCC11;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+img { border: 0; }
+
+header{
+    width: 100%;
+    padding-bottom: 0%;
+    z-index: 1;
+    box-shadow: 5px 4px 5px #000;
+  }
+
+header p{
+    line-height: 120px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFCC11;
+    background-size: cover;
+    background-image: url("bannerdoghouse.png"); 
+    font-family: sans-serif;
+  }
+
+li 
+  {
+    list-style: none;
+  }
+
+nav 
+    {
+      width: 100%;
+      border-color: #FFCC11;
+    }
+
+
+  .header {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .header, nav
+    {
+      width: 100%;
+      text-align: left;
+      color: #FFCC11;
+    } 
+
+.ul{
+    display: flex;
+    justify-content: space-around;
+    background: inherit;
+    max-width: 100%;
+    height: auto;
+    font-size: 16px;
+    /*background-color: #FFCC11;*/
+  }
+
+button
+    {
+        background: inherit;
+        padding: 0px;
+        border: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: #FFCC11;
+    }
+
+  .mybutton
+      {
+          background: inherit;
+          padding: 20px;
+          border: none;
+          font-size: 13px;
+          font-family: sans-serif;
+          color: #FFCC11;
+         } 
+
+         button .hover {
+  background-color: #FFCC11;
+}
+/* for base menu */
+header
+    {
+      width: 100%;
+      height: 120px;
+    }
+
+body
+    {     
+      background-image: url("spit.png");
+      background-size: cover;
+      position: relative;/*padding: 20px;*/
+    } 
+
+.body-wrap {
+  min-height: 0px;
+}
+
+.body-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.body-wrap:before,
+.body-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(26, 49, 95, 1)), color-stop(100%, rgba(26, 49, 95, 0)));
+  background: linear-gradient(to bottom, rgba(26, 49, 95, 1) 0%, rgba(26, 49, 95, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1a315f', endColorstr='#001a315f', GradientType=0);
+  }
+
+.body-wrap:after {
+  top: auto;
+  bottom: 0;
+   background: linear-gradient(to bottom, rgba(26, 49, 95, 0) 0%, rgba(26, 49, 95, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#001a315f', endColorstr='#1a315f', GradientType=0);
+}
+
+
+
+/* end of base menu */
+.box{
+  margin-top: 100px;
+  width: 80%;
+  margin: 75px;
+  background: url("handmadepaper.jpg");
+  background-size: cover;
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  position: relative;
+  z-index: -1;
+}
+
+.box p{
+  font-family: sans-serif;
+  font-style: inherit;
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+  background: transparent;
+}
+
+footer{
+  width: 100%;
+  margin:  auto;
+  background: black;
+  background-size: cover;
+  padding: 20px;
+  font-size: 12px;
+  font-family: inherit;
+  color: #FFCC11;
+  }
