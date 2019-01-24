@@ -6,16 +6,17 @@
        {
          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
        });
-
+/* this bit is used in the collapse action*/
 var win = $(window),
 
     nav = $('nav'),
 
     pos = nav.offset().top,
-    sticky = function(){ 
+        sticky = function(){ 
       win.scrollTop() > pos ?
         nav.addClass('sticky')
       : nav.removeClass('sticky') }
 
 win.scroll(sticky)
  
+
