@@ -4,17 +4,21 @@
 <title>PDQ Flyers - HOME</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="src/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="src/index.js"></script>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">-->
+
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>-->
+  
+ 
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
+ 
+
 </head>
 
 <body>
@@ -27,55 +31,56 @@
 
 <nav id="sticky-menubar">
   <div class="body-wrap">
-    <div class="container">
-      <nav class="navbar navbar-inverse"> <!--role="navigation"-->
+   <!--<div class="container">-->
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-
           <div class="navbar-header" >
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#small_menu"><span class="glyphicon glyphicon-tasks"></span></button>
-            <a class="navbar-brand" href="#">PDQ Flyers</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#small_menu">
+              <span class="glyphicon glyphicon-tasks"></span>
+            </button>
+            <a class="navbar-brand" href="#">Menu</a>
           </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="small_menu" class="collapse navbar-collapse">         
+            <div class="collapse navbar-collapse" id="small_menu" >         
               <ul class="nav navbar-nav">
                 <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li><a href="http://pdqflyers.com/oldindex.html">Old Site</a></li>
-                <li><a href="https://www.wunderground.com/personal-weather-station/dashboard?ID=INANAIMO20">Field Weather</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Info<b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Info<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="http://www.pdqflyers.com/membership.php">Membership</a></li>
-                    <li><a href="http://www.pdqflyers.com/member-data-update.php">Membership Updates</a></li>
+                    <li><a href="http://www.pdqflyers.com/member-data-update.php">Member Updates</a></li>
                     <li><a href="https://pdqflyers.com/field-locations.php">Field Locations</a></li>
-                    <li><a href="http://pdqflyers.com/pdq-rules.php">Rules and Regulation</a></li>
+                    <li><a href="http://pdqflyers.com/pdq-rules.php">Rules</a></li>
                     <li><a href="http://pdqflyers.com/project-about-our-club.php">About our club</a></li>
                     <li class="divider"></li>
                     <li><a href="https://pdqflyers.com/contact-us.php">Contact us</a></li>   
                   </ul>
                 </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right"> 
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="http://pdqflyers.com/email-broadcast.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;eMail Broadcast</a></li>
-                    <li><a href="http://pdqflyers.com/member-data-access.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Member Data Access</a></li>
-                  </ul>        
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://pdqflyers.com/email-broadcast.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;eMail</a></li>
+                    <li><a href="http://pdqflyers.com/member-data-access.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Member Info</a></li>
+                    <li><a href="http://pdqflyers.com">Old Site</a></li>
+                  </ul> 
+                </li>       
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="http://pdqflyers.com/event-schedule.php"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Events</a></li>
                     <li><a href="http://pdqflyers.com/our-airfield.php"><span class="glyphicon glyphicon-film"></span>&nbsp;Multimedia</a></li>
-                    <li><a href="http://pdqflyers.com/online-swap-meet.php"><span class="glyphicon glyphicon-gift"></span>&nbsp;Online&nbsp;Swaps</a></li>
+                    <li><a href="http://pdqflyers.com/online-swap-meet.php"><span class="glyphicon glyphicon-gift"></span>&nbsp;Market</a></li>
                   </ul>
-                <li><a href="https://pdqflyers.com/members-only.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
-              </li>
-            </ul>
-          </div>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://www.wunderground.com/personal-weather-station/dashboard?ID=INANAIMO20">Weather</a></li>
+                  <li><a href="https://pdqflyers.com/members-only.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+                </ul>
+            </div>
         </div>
       </nav>
-    </div>
- </div>
+    <!--</div>-->
+  </div>
 </nav>
 
 
@@ -84,7 +89,7 @@
 <br>
   <p>PDQ Flyers is a model aircraft club with about 90 members.  All of us have a love of aircraft and flying, in all its forms.  This includes building - both scale and non-scale models, and flying - float planes, aerobatics, 3D and stunt flying, helicopters, and totally made up things that fly because they have an airfoil and a propeller.  One of our members flies Snoopy's dog house!!
 <br><br>
-In June, 2013, Shaw TV filmed some of our flyers in action and published the video on the "Go Island" section of their website.  It's available on YouTube <a href="http://www.youtube.com/watch?v=IRUzSukrQ0M"target="_new">here</a></p>
+In June, 2013, Shaw TV filmed some of our flyers in action and published the video on the "Go Island" section of their website.  It's available on YouTube</p> <iframe width="280" height="157" src="https://www.youtube.com/embed/IRUzSukrQ0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--<a href="http://www.youtube.com/watch?v=IRUzSukrQ0M"target="_new">here</a>-->
 
 <br>
 

@@ -1,68 +1,5 @@
 /* bootstrap dropdown hover menu*/
 /*--------------*/
-
-
-/*------------*/
-.sticky {
-  position: fixed;
-  top: 0; left: 0;
-  z-index: 2;
-  box-sizing: 100px;
-  flex-direction: row;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #FFCC11;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #FFCC11;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 17px;
-}
-
-.navbar-brand {
-  color: #FFcc11;
-}
-
-div .container-fluid {
-  justify-content: space-around;
-}
-
-div .navbar-inverse {
-  justify-content: space-around;
-}
-
-nav .navbar-nav {
-  flex-direction: row;
-}
-
-.container-fluid {
-  color: #FFcc11;
-}
-
-#navbar a.hover {
-  background-color: #FFCC11;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/*.content {
-  padding: 16px;*/
-}
-
 h2 {
   text-align: center;
 }
@@ -83,55 +20,30 @@ header p{
     background-image: url("bannerdoghouse.png"); 
     font-family: sans-serif;
   }
-
+/*
 li 
   {
     float left: 
-  }
+  }*/
 
 li a {
-  display: inline-block;
-  color: white;
+  color: #FFcc11;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+li a .hover {
   background-color: #111;
 }
 
 nav 
     {
       width: 100%;
-      background: transparent; top;
-      /*justify-content: space-around;*/
+      transition: box-shadow 400ms;
+      color: green;
+      margin-top: 0px;
     }
-
-  .header {
-    width: 100%;
-    height: 1000px;
-    align-items: left;
-    justify-content: space-around;
-
-  }
-
-  .header, nav
-    {
-      width: 100%;
-      text-align: justify;
-      justify-content: space-around;
-  
-    } 
-
-.ul{
-    display: block;
-    flex-direction: row;
-    max-width: 100%;
-    height: auto;
-    font-size: 16px;
-    justify-content: space-around;
-  }
 
 button
     {
@@ -140,27 +52,22 @@ button
         border: none;
         font-size: 20px;
         font-family: sans-serif;
-        color: #FFCC11;
     }
 
-  .mybutton
-      {
-          background: inherit;
-          padding: 20px;
-          border: none;
-          font-size: 13px;
-          font-family: sans-serif;
-          color: #FFCC11;
-         } 
+footer{
+  width: 100%;
+  margin:  auto;
+  background: black;
+  background-size: cover;
+  padding: 20px;
+  font-size: 12px;
+  font-family: inherit;
+  color: #FFCC11;
+  }
 
-         button .hover {
-  background-color: #FFCC11;
-}
-/* for base menu */
-/*header
-    {
-      width: 100%;
-      height: 120px;
+/*nav .hover 
+    }
+      color: #333;
     }*/
 
 body
@@ -168,12 +75,51 @@ body
       background-image: url("spit.png");
       background-size: cover;
       position: relative;/*padding: 20px;*/
-    } 
+    }     
+
+/*------------*/
+.sticky {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 2;
+ /* box-sizing: 100px;*/
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.navbar {
+  /*overflow: hidden;*/
+  /*background-color: #FFCC11;*/
+}
+
+.navbar a {
+  /*text-align: center;*/
+  padding: 14px 14px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar-nav {
+  color: green;
+}
+
+    .mybutton
+      {
+        background: transparent;
+        padding: 20px;
+        border: none;
+        font-size: 13px;
+        font-family: sans-serif;
+      } 
 
 .body-wrap {
-  min-height: 10px;
+  min-height: 0px;
+  /*background-color: #FFcc11
   color: #FFCC11;  /*colors the hamburger*/
 }
+
 
 .body-wrap {
   position: relative;
@@ -188,14 +134,12 @@ body
   left: 0;
   right: 0;
   z-index: -1;
-  height: 0px;
-  background-color: #FFCC11;
+  height: 200px;
   }
 
 .body-wrap:after {
   top: auto;
   bottom: 0;
-  background-color: #FFCC11;
 }
 
 /* end of menu */
@@ -221,13 +165,3 @@ body
   background: transparent;
 }
 
-footer{
-  width: 100%;
-  margin:  auto;
-  background: black;
-  background-size: cover;
-  padding: 20px;
-  font-size: 12px;
-  font-family: inherit;
-  color: #FFCC11;
-  }
