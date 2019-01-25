@@ -8,7 +8,7 @@
   top: 0; left: 0;
   z-index: 2;
   box-sizing: 100px;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
 .sticky + .content {
@@ -29,6 +29,26 @@
   font-size: 17px;
 }
 
+.navbar-brand {
+  color: #FFcc11;
+}
+
+div .container-fluid {
+  justify-content: space-around;
+}
+
+div .navbar-inverse {
+  justify-content: space-around;
+}
+
+nav .navbar-nav {
+  flex-direction: row;
+}
+
+.container-fluid {
+  color: #FFcc11;
+}
+
 #navbar a.hover {
   background-color: #FFCC11;
   color: black;
@@ -39,8 +59,8 @@
   color: white;
 }
 
-.content {
-  padding: 16px;
+/*.content {
+  padding: 16px;*/
 }
 
 h2 {
@@ -66,8 +86,20 @@ header p{
 
 li 
   {
-    list-style: none;
+    float left: 
   }
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
 
 nav 
     {
@@ -81,6 +113,7 @@ nav
     height: 1000px;
     align-items: left;
     justify-content: space-around;
+
   }
 
   .header, nav
@@ -88,14 +121,16 @@ nav
       width: 100%;
       text-align: justify;
       justify-content: space-around;
+  
     } 
 
 .ul{
-    display: flex;
+    display: block;
+    flex-direction: row;
     max-width: 100%;
     height: auto;
     font-size: 16px;
-    /*background-color: #FFCC11;*/
+    justify-content: space-around;
   }
 
 button
