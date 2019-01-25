@@ -1,20 +1,16 @@
 {
-  "name": "PDQwebsite-master",
+  "name": "working",
   "version": "1.0.0",
-  "description": "PDQ Flyers web site",
-  "main": "sorking/src/index.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start": "npm-run-all --parallel watch:server watch:build",
-    "watch:build": "webpack --watch",
-    "watch:server": "nodemon \"./dist/index.js\" --watch \"./dist\""
-}
+    "build": "babel working --out-dir lib",
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "dependencies": {
-    "user": "0.0.0",
-    "watch": "^1.0.2"
+    "node-gyp": "^3.8.0"
   }
 }
