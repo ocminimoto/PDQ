@@ -1,10 +1,10 @@
 {
   "name": "working",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel working --out-dir lib",
+    "build": "babel working --out-dir dist",
     "start": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
