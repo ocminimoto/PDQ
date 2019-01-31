@@ -37,7 +37,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Info<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="membership.php">Membership</a></li>
+                    <li><a href="../membership.php">Membership</a></li>
                     <li><a href="member-data-update.php">Member Updates</a></li>
                     <li><a href="field-locations.php">Field Locations</a></li>
                     <li><a href="pdq-rules.php">Rules</a></li>
