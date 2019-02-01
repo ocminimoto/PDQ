@@ -59,3 +59,11 @@ for (i = 0; i < acc.length; i++) {
   });
 }*/
 
+
+/*side menubar */
+
+$(document).ready(function(){
+    $('#sidebar-btn').click(function(){
+      $('#sidebar').toggleClass('visible');
+    });
+  });

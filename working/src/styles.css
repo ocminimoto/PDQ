@@ -1,4 +1,86 @@
-/* Experimental styles*/
+
+/*body{
+  margin:0px;
+  padding:0px;
+  font-family:"Helvetica Neue", Helvetica, Arial;
+}*/
+/* Experimental styles above*/
+#wrapper {       /*  This DIV constrains the width of your page's content  */
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 30px;
+}
+
+
+
+.centre {
+  clear: both;            /*  Clears all floats above this object */
+  width: 100px;
+  position: absolute;             /*  Use these 3 declarations to centre object  */
+  left: 50%;                      /*  Use these 3 declarations to centre object  */
+  transform: translate(-50%, 0);  /*  Use these 3 declarations to centre object  */
+  
+}
+
+.floatleft {
+  float: left;                    /*  This align's your object to the left.  */
+
+}
+
+.floatright {
+  float: right;                   /*  This align's your object to the right.  */
+  
+}
+
+
+#sidebar{
+  background:white;
+  width:200px;
+  height:100%;
+  display:block;
+  position:absolute;
+  left:-202px;
+  top:55px;
+  transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+  left:0px;
+  transition:left 0.3s linear;
+}
+
+#sidebar-btn{
+  display:inline-block;
+  vertical-align: middle;
+  width:20px;
+  height:15px;
+  cursor:pointer;
+  margin:20px;
+  position:absolute;
+  top:10px;
+  right:-60px;
+  font-size: 20px;
+  color: #003287;
+  background-color: #FFcc11;
+  box-sizing: border-box;
+}
+
+/*#sidebar-btn span{
+  height:1px;
+  background:#111;
+  margin-bottom:5px;
+  display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+  width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+  width:50%;
+}*/
+
+
 
 .accordion {
   background-color: #eee;
@@ -39,11 +121,6 @@
 
 /* bootstrap dropdown hover menu*/
 /*--------------*/
-h2 {
-  text-align: center;
-}
-
-img { border: 0; }
 
 .header{
     width: 100%;
@@ -60,14 +137,45 @@ img { border: 0; }
     font-family: sans-serif;
   }
 
-/*ul li 
-  {
-    font-size: 14px;
-    color: black;
-  }*/
+.visible li {
+  background-color: white;
+}
+
+section {
+  width: 100%;
+  clear: both;
+  background-color: darkgrey;
+    
+}
+
+ul{
+  margin:0px;
+  padding:0px;
+  color: #FFcc11;
+}
+
+ul li{
+  list-style:none;
+}
+
+ul li a{
+  background:transparent;
+  color:#FFcc11;
+  /*border-bottom:1px solid #111;*/
+  display:block;
+  /*width:180px;*/
+  padding:10px;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+img { border: 0; }
+
 
 li a {
-  /*color: #FFcc11;*/
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -86,7 +194,7 @@ nav
     {
       width: 100%;
       transition: box-shadow 400ms;
-      color: green;
+      color: #FFcc11;
       margin-top: 0px;
       z-index: 1;
     }
@@ -99,6 +207,32 @@ button
         font-size: 20px;
         font-family: sans-serif;
     }
+
+p button
+    {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+    }
+
+
+
+p button:hover {background-color: #3e8e41}
+
+p button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 footer{
   width: 100%;
@@ -144,7 +278,7 @@ body
   /*text-align: center;*/
   padding: 14px 14px;
   font-size: 20px;
-  color: black;
+  color: #9d9d9d;
 }
 
 .navbar-nav {
@@ -191,15 +325,13 @@ body
 /* end of menu */
 .box{
   position: relative;
-  margin-top: 0px;
-  width: 80%;
-  margin: 75px;
+  margin-left: 25px;
+  width: 95%;
   background: url("handmadepaper.jpg");
   background-size: cover;
   padding: 20px;
   font-size: 16px;
   font-family: sans-serif;
-  position: relative;
   z-index: 0;
   }
 
