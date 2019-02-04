@@ -1,6 +1,5 @@
 
 
-
 .diy-slideshow{
   position: relative;
   display: block;
@@ -50,13 +49,13 @@ figure.show{
   padding: 10px 5px 15px 10px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-}/*
+}
 .prev{
   left: 0;
   padding: 10px 10px 15px 5px;
   border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;*/
-
+  border-bottom-right-radius: 3px;
+}
 /* Experimental styles above*/
 #wrapper {       /*  This DIV constrains the width of your page's content  */
   margin: 0 auto;

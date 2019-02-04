@@ -1,3 +1,24 @@
+
+/*var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}*/
+
    var counter = 0, // to keep track of current slide
     $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
     numItems = $items.length; // total number of slides
@@ -59,14 +80,7 @@ var win = $(window),
 
 win.scroll(sticky)
  
- /* search function
-
-$('.search-button').click(function(){
-  $(this).parent().toggleClass('open');
-});
-
-Experimental sripts*/
-
+/* Sidebar in and out function */
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -81,21 +95,6 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-/*
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}*/
 
 
 /*side menubar */
