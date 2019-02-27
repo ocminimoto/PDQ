@@ -1,0 +1,198 @@
+
+<html>
+<head>
+<title>PDQ Flyers - Email Broadcast</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="src/index.js"></script>
+  <link rel="icon" href="images/PDQmedallion.gif" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+<div class="header">
+   <div ><p>PDQ Flyers</p></div>
+</div>
+
+<!--<div id="dropdown_container"></div>-->
+
+<nav id="sticky-menubar">
+  <div class="body-wrap">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header" >
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#small_menu">
+              <span class="glyphicon glyphicon-tasks"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="small_menu" >         
+              <ul class="nav navbar-nav">
+                <li><a href="http://pdqflyers.com/"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about-our-club.html">About our club</a></li>
+                    <li><a href="member_info.html">Membership</a></li>
+                    <li><a href="field-locations.php">Field Locations</a></li>
+                    <li><a href="pdq-rules.html">Rules</a></li>                    
+                    <li class="divider"></li>
+                    <li><a href="contact-us.html">Contact us</a></li>  
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="email-broadcast.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;eMail</a></li>
+                    <li><a href="member-data-access.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Member Info</a></li>
+                    <li><a href="indexold.html">Old Site</a></li>
+                  </ul> 
+                </li>       
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="event-schedule.html"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Events</a></li>                 
+                    <li><a href="online-swap-meet.php"><span class="glyphicon glyphicon-gift"></span>&nbsp;Market</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Media<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="slideshow.html">2019</a></li>
+                    <li><a href="slideshow2018.html">2018</a></li>
+                    <li><a href="slideshow2017.html">2017</a></li>
+                    <li><a href="slideshow2016.html">2016</a></li>
+                    <li><a href="slideshow2016.html">2015</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="indexold.php">Old Site</a></li>
+                <li><a href="https://www.wunderground.com/personal-weather-station/dashboard?ID=INANAIMO20">Weather</a></li>
+                <li><a href="members-only.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;</a></li>
+              </ul>
+            </div>
+      </nav> 
+  </div>
+</nav>
+
+<div id="wrapper">
+<div class= "box">
+
+<!--
+Notes:
+This page is actually a request form which provides the requestor's email address, request details, and email message subject and content.  It invokes a stand alone html page named broadcast-action.php which actually produces the member data list and issues the email according to the request.
+--><span>&nbsp;</span> 
+
+<h2>Group eMail Broadcast</h2>
+
+<h3>Instructions</h3>
+
+<p>This form is to prepare a broadcast message for a special interest
+group or for the whole Club. You must be in the interest group to
+send a broadcast.</p>
+
+<p>To send a message that is intended for every member, select the "PDQ Flyers" button below. This
+is intended for Club Executive only and is password protected (contact the Club President to
+request authorization). The button labeled "General Interest" selects all members who have checked off that interest group, which is usually all
+members, so if you need to reach everyone and don't have the password, use it.</p>
+
+<p>When you have completed the form, press "Send my Message" and the broadcast message will be sent to
+your target group. (Don't forget to remove the message instructions
+first!).</p>
+
+<p>The lists are provided in case you'd like to send a message with an attachment or add other email
+addresses.  Copy and paste the list into the "To:" or "Cc:" box of your email.  Some email
+systems want comma delimited lists and some just spaces, so choose the list your's likes.</p>
+
+<form method="post"
+      action="broadcast-action.php">
+    <!-- set up the boxes so that the requestor can fill them in and we can pass them to broadcast-action for processing --> 
+
+    <fieldset id="broadcast">
+        <legend><h3>Broadcast Request</h3></legend> 
+
+        <p><label><span>Your E-mail:</span></label><br>
+        <input size="30"
+               name="from_email"></p>
+
+        <p><strong><label><span>Password:</span></label></strong><br>
+        <input size="12"
+               type="password"
+               value=""
+               name="clubpswd"><span>&nbsp;</span><span style="FONT-SIZE: 10pt">(only required for Club
+               Messages)</span></p>
+
+        <p><strong><span>Request Instructions:</span></strong><br>
+        <input type="checkbox"
+               name="send_mail"><label><span>&nbsp;Send email</span></label><br>
+        <input checked
+               type="radio"
+               value="none"
+               name="list"><label><span>&nbsp;No member list needed</span></label><br>
+        <input type="radio"
+               value="straight"
+               name="list"><label><span>&nbsp;Provide space separate member list</span></label><br>
+        <input type="radio"
+               value="comma"
+               name="list">&nbsp;<label><span>Provide comma separated member list</span></label></p>
+
+        <p><strong><span>Interest Group:</span></strong><br>
+        <input type="radio"
+               value="club"
+               name="group"><label><span> PDQ Flyers</span></label><br>
+        <input type="radio"
+               value="general"
+               name="group"><label><span> General Interest</span></label><br>
+        <input type="radio"
+               value="floats"
+               name="group"><label><span> Float Flyers</span></label><br>
+        <input type="radio"
+               value="indoor"
+               name="group"><label><span> Indoor Flyers</span></label><br>
+        <input type="radio"
+               value="heli"
+               name="group"><label><span> Helicopters</span></label><br>
+        <input type="radio"
+               value="scale"
+               name="group"><label><span> Scale</span></label></p>
+
+        <p><strong><label><span>Subject:</span></label><br>
+        <input size="50"
+               name="subject"></strong></p>
+
+        <p><strong><label><span>Message:</span></label></strong><br>
+        <textarea rows="10"
+                  cols="60"
+                  name="message">
+                   Type or paste you message into this area. This Broadcast function is basic: you cannot insert photos, format text, or attach documents. To do any of these things, use your own email system with the address list provided.
+        </textarea></p>
+    </fieldset>
+
+    <p><button class="button" type="submit">Send my message</button></p>
+    <!--<button class="button" type="submit"><span>Send my message</span></button><span>&nbsp;</span><span>&nbsp;</span>-->
+</form> 
+</div> <!-- "box" ends here -->
+</div>
+
+<footer>
+
+  <h2><object width="500" height="200"><param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=INANAIMO20&freq=&units=metric&lang=EN" /><embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=INANAIMO20&freq=&units=metric&lang=EN" type="application/x-shockwave-flash" width="290" height="130" /></object></h2>
+
+  <h2>Parksville District and Qualicum Beach Radio Controlled Model Aircraft Club</h2>
+  <p> <a href="https://pdqflyers.com/contact-us.php">WebMaster</a></p>
+
+</footer>
+
+ <!--<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>-->
+
+ <!--Load our React component. -->
+ <script src="src/index.js"></script>
+
+</body>
+
+</html>

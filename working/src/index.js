@@ -1,23 +1,12 @@
-
-/*var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+/*$(document).ready( function(){
+  $('#alternar').on('click', function(){
+    //alert('cambia');
+    $(this).toggleClass('cambiado');
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}*/
+  );
+});*/
+
+   /*experimental code above this lilne*/
 
    var counter = 0, // to keep track of current slide
     $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
@@ -55,16 +44,16 @@ if('ontouchstart' in window){
   });
 }
 
-/*experimental code above this lilne*/
 
-   /* bootstrap dropdown hover menu*/
-     $('ul.nav li.dropdown').hover(function() 
-       {
-         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-       }, function() 
-       {
-         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-       });
+
+/* bootstrap dropdown hover menu*/
+  $('ul.nav li.dropdown').hover(function() 
+    {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() 
+    {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
 
 
 /* sticy menubar*/

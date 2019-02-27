@@ -1,0 +1,190 @@
+
+<html>
+<head>
+<title>PDQ Flyers - Meetings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://pdqflyers.com/src/styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://pdqflyers.com/src/index.js"></script>
+  <link rel="icon" href="images/PDQmedallion.gif" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+
+<div class="header">
+   <div ><p>PDQ Flyers</p></div>
+</div>
+
+<!--Start of menuing</div>-->
+
+<nav id="sticky-menubar">
+  <div class="body-wrap">
+   <!--<div class="container">-->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header" >
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#small_menu">
+              <span class="glyphicon glyphicon-tasks"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="small_menu" >         
+              <ul class="nav navbar-nav">
+                <li><a href="http://pdqflyers.com/"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Info<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../membership.php">Membership</a></li>
+                    <li><a href="member-data-update.php">Member Updates</a></li>
+                    <li><a href="field-locations.php">Field Locations</a></li>
+                    <li><a href="pdq-rules.php">Rules</a></li>
+                    <li><a href="project-about-our-club.php">About our club</a></li>
+                    <li class="divider"></li>
+                    <li><a href="contact-us.php">Contact us</a></li>   
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="email-broadcast.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;eMail</a></li>
+                    <li><a href="member-data-access.php"><span class="glyphicon glyphicon-list"></span>&nbsp;Member Info</a></li>
+                    <li><a href="indexold.html">Old Site</a></li>
+                  </ul> 
+                </li>       
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="event-schedule.php"><span class="glyphicon glyphicon-calendar"></span>&nbsp;Events</a></li>
+                    <li><a href="our-airfield.php"><span class="glyphicon glyphicon-film"></span>&nbsp;Multimedia</a></li>
+                    <li><a href="honline-swap-meet.php"><span class="glyphicon glyphicon-gift"></span>&nbsp;Market</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://www.wunderground.com/personal-weather-station/dashboard?ID=INANAIMO20">Weather</a></li>
+                  <li><a href="members-only.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <!--</div>-->
+  </div>
+</nav>
+<!-- End of menuing-->
+
+<div class= "box">
+ <!--
+Notes:
+This page was written as a separate html document and the code was then transferred to this page.  The fieldset function and other techniques are not available in xSitePro (or at least I didn't know how to do that).  It invokes an html page to deal with the actual application which is not part of this xSitePro file.
+--> 
+
+<h1>Membership Data Access</h1>
+
+<h3>Instructions</h3>
+
+<p>The&nbsp;Member information on our website is provided on a need to know basis.&nbsp;&nbsp;If your duties
+require&nbsp;you to have&nbsp;this information, contact the&nbsp;President&nbsp;for authorization and&nbsp;he
+will&nbsp;give you&nbsp;the password&nbsp;to allow&nbsp;access.&nbsp;</p>
+
+<p>"All Data" should be checked to see all members in our data base, current, passed, and new members in
+process.&nbsp; If this is checked the data will be sorted by membership year and whatever is checked in the
+Secondary Sort Preference.&nbsp; If it is not checked, only current and past year members will be included in the
+report.</p>
+
+<p>The password is changed every January 1st.&nbsp;</p>
+
+<div id="entries">
+    <form method="post"
+          action="data-detail-exec.php"
+          target="_blank">
+        <fieldset id="contact">
+            <h3>Contact Data Access Information</h3>
+
+            <p><label>&nbsp; MAAC#:</label><br>
+            &nbsp; <input size="12"
+                   name="request_maac"></p>
+
+            <p><label>&nbsp; Last Name:</label><br>
+            &nbsp; <input size="30"
+                   name="request_lname"></p>
+
+            <p><label>&nbsp; Password:</label><br>
+            &nbsp; <input size="30"
+                   type="password"
+                   value=""
+                   name="request_password"></p>
+
+            <p>&nbsp;</p>
+        </fieldset>
+
+        <fieldset id="sort_order1">
+            <h3>Primary Sort Preference</h3>
+            <p>Primary sort key: &nbsp; </p>
+
+            <p>&nbsp;<input type="radio"
+                   value="all_data"
+                   name="sort1_key"> <label>All Data</label></p>
+
+            <p>&nbsp;<input type="radio"
+                   value="first_name"
+                   name="sort1_key"> <label>First Name</label></p>
+
+            <p>&nbsp;<input type="radio"
+                   value="last_name"
+                   name="sort1_key"> <label>Last Name</label></p>
+
+            <p>&nbsp;<input checked
+                   type="radio"
+                   value="membership_year"
+                   name="sort1_key"> <label>Membership Year</label></p>
+        </fieldset><br>
+
+        <fieldset id="sort_order2">
+            <h3>Secondary Sort Preference</h3>
+            <p>Primary sort key: &nbsp; </p>
+
+            <p>&nbsp;<input checked
+                   type="radio"
+                   value="first_name"
+                   name="sort2_key"> <label>First Name</label></p>
+
+            <p>&nbsp;<input type="radio"
+                   value="last_name"
+                   name="sort2_key"> <label>Last Name</label></p>
+        </fieldset>
+
+        <p>&nbsp;</p>
+
+        <p><button type="submit">Create a Data Report</button></p>
+    </form>
+</div> 
+
+</div>
+
+<footer>
+
+  <h2><a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=INANAIMO20"><img title=
+     "Weather Underground PWS INANAIMO20"
+     style="HEIGHT: 120px; WIDTH: 200px"
+   
+     alt="Weather Underground PWS INANAIMO20"
+     src=
+     "http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250_metric&amp;weatherstationcount=INANAIMO20">
+    </a></h2>
+
+  <h2>Parksville District and Qualicum Beach Radio Controled Model Aircraft Club</h2>
+  <p> <a href="https://pdqflyers.com/contact-us.php">WebMaster</a></p>
+
+</footer>
+
+ <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+ <!--Load our React component. -->
+  <script src="src/index.js"></script>
+
+</body>
+
+</html>
