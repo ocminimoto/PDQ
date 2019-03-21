@@ -54,6 +54,19 @@ a:hover
 /*
  * Just a quick hamburger
  */
+
+#navbar-button span
+{
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 4px;
+  position: relative;
+  background: #167ac6;
+  border-radius: 3px;
+  z-index: 1;
+}
+
 #menuToggle span
 {
   display: block;
@@ -210,7 +223,7 @@ figure.show{
 }
 /* Experimental styles above*/
 #wrapper {       /*  This DIV constrains the width of your page's content  */
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: 100%;
   padding-top: 30px;
 }
@@ -228,7 +241,7 @@ figure.show{
 
 .floatleft {
   float: left;                    /*  This align's your object to the left.  */
-
+  
 }
 
 .floatright {
@@ -306,7 +319,7 @@ figure.show{
   overflow: hidden;
 }
 
-/* end of slideshow */
+/* end of old sidebar */
 
 /* bootstrap dropdown hover menu*/
 /*--------------*/
@@ -464,16 +477,16 @@ nav .body-wrap
       width: 100%;
       /*transition: box-shadow 400ms;*/
       color: #FFcc11;
-      margin-top: 0px;
+      margin-top: -12px;
       z-index: 1;
       box-shadow: 5px 4px 5px #000;
     }
 
-nav .sticky-sidebar {
+/*nav .sticky-sidebar {
       width: 100%;
       color: #FFcc11;
       margin-top: 6px;
-}
+}*/
 
 .navbar a {
   font-size: 20px;
@@ -481,6 +494,7 @@ nav .sticky-sidebar {
 
 .navbar-nav {
   color: #FFcc11;
+  margin: 7.5px -15px;
 }
 
 .mybutton
@@ -533,7 +547,7 @@ nav .sticky-sidebar {
   padding: 30px;
   font-size: 16px;
   font-family: sans-serif;
-  z-index: -1;
+  /*z-index: -1;*/
   }
 
 .box p{
